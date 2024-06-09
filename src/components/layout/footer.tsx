@@ -31,7 +31,7 @@ const Footer = ({ }: FooterProps) => {
 					</div>
 
 					<div className="mt-6 flex gap-6 flex-col lg:flex-row">
-						<div className="flex-1 lg:flex-none lg:w-[300px] border-[1px] flex lg:flex-col border-grey-300 p-4 rounded-[20px]">
+						<div className="flex-1 lg:flex-none lg:w-[300px] border-[1px] flex flex-col sm:flex-row lg:flex-col border-grey-300 p-4 rounded-[20px]">
 							<div className="flex-1">
 								<Image src="/assets/images/quantflow-logo-black.png" alt="Quantflow" width={120} height={40} />
 
@@ -95,6 +95,16 @@ const Footer = ({ }: FooterProps) => {
 										</li>
 									</ul>
 								</div>
+							</div>
+
+							<div className="mt-5 flex items-center flex-col gap-4 sm:flex-row justify-between">
+								<p className="body-small text-grey-500 text-center">
+									©2024 Quantflow Ai AG, all rights reserved.
+								</p>
+
+								{
+									ICONS.linkedIn
+								}
 							</div>
 						</div>
 					</div>
