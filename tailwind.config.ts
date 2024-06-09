@@ -21,10 +21,18 @@ const config = {
     extend: {
       colors: {
         quantflow: {
-          light: "#9599FF",
-          primary: "#6552FF",
-          secondary: "#A1A1A1",
-          dark: "#3C2F9E"
+          DEFAULT: "#6552FF", // quantflow-0
+          100: "#9599FF", // quantflow-+1
+          500: "#493BBE", // quantflow--1
+          800: "#3C2F9E" // quantflow--2
+        },
+        grey: {
+          DEFAULT: "#f5f7f9", // grey-+2
+          100: "#ffffff", // white
+          300: "#cfd6dd", // grey-+1
+          500: "#9ea8b3", // grey-0
+          600: "#4a545e", // grey--1
+          800: "#141414", // black
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
