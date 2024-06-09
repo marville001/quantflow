@@ -61,7 +61,6 @@ export default function Home() {
       </div>
 
       <div className="p-4 bg-quantflow-500">
-
         <div className="max-w-[1120px] mx-auto py-16 lg:py-24">
           <h2 className="hero-medium text-white">Simplify with Ai</h2>
           <p className="body-large text-white max-w-[544px] mt-5">
@@ -77,9 +76,60 @@ export default function Home() {
               <Button variant={"outline"} className="mt-5 h-[48px] gap-2">Learn more {ICONS.arrowRightUp}</Button>
             </div>
             <div className="flex-1 self-end h-[360px]">
-              <Image src="/assets/images/document-automation.png" alt="Hero" width={600} height={400} className="w-full h-[300px] sm:h-full max-sm:object-left object-top object-cover" />
+              <Image src="/assets/images/document-automation.png" alt="Document automation" width={600} height={400} className="w-full h-[300px] sm:h-full max-sm:object-left object-top object-cover" />
             </div>
           </div>
+
+          {/*  */}
+          <div className="grid grid-cols-1 md:grid-cols-3 mt-6 gap-6 gap-x-0 md:gap-x-6">
+            <div className="col-span-2 space-y-6">
+              <div className="bg-white col-span-2 p-[32px] pb-0 sm:h-[450px] flex-col overflow-hidden rounded-[20px] flex">
+                <h3 className="text-grey-800 header-normal">Email Automation</h3>
+                <p className="body-normal mt-4 text-grey-600 max-w-[90%]">
+                  Automate email responses and follow-up actions, integrating seamlessly with your software for efficient communication.
+                </p>
+                <Button variant={"outline"} className=" h-[48px] mt-3 w-max gap-2">Learn more {ICONS.arrowRightUp}</Button>
+
+                <div className="mt-6">
+                  <Image
+                    src="/assets/images/email-automation.png"
+                    alt="Email automation"
+                    width={600} height={400} className="w-full h-auto" />
+                </div>
+              </div>
+              <div className="bg-white col-span-2 p-[32px] pb-0 sm:h-[450px] flex-col overflow-hidden rounded-[20px] flex">
+                <h3 className="text-grey-800 header-normal">Email Automation</h3>
+                <p className="body-normal mt-4 text-grey-600 max-w-[90%]">
+                  Automate email responses and follow-up actions, integrating seamlessly with your software for efficient communication.
+                </p>
+                <Button variant={"outline"} className=" h-[48px] mt-3 w-max gap-2">Learn more {ICONS.arrowRightUp}</Button>
+
+                <div className="mt-6">
+                  <Image
+                    src="/assets/images/email-automation.png"
+                    alt="Email automation"
+                    width={600} height={400} className="w-full h-auto" />
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white col-span-1 w-full max-h-[925px] p-[32px] pb-0 flex-col overflow-hidden rounded-[20px] flex">
+              <h3 className="text-grey-800 header-normal">Insight Hub</h3>
+              <p className="body-normal mt-4 text-grey-600 max-w-[90%]">
+                Transform unstructured data into structured insights, enhancing your data analysis and decision-making processes.
+              </p>
+              <Button variant={"outline"} className=" h-[48px] mt-3 w-max gap-2">Learn more {ICONS.arrowRightUp}</Button>
+
+              <div className="mt-6 flex-1 max-md:max-h-[250px] ">
+                <Image
+                  src="/assets/images/insight-hub.png"
+                  alt="Insight Hub"
+                  width={600} height={400} className="w-full h-full object-top object-cover" />
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
