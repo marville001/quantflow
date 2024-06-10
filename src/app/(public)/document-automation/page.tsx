@@ -344,13 +344,13 @@ const page = () => {
                         document automation industry.
                     </p>
                 </div>
-                <div className="flex h-full md:h-[592px] gap-4">
-                    <div className="flex-1 bg-grey-300 flex flex-col justify-center w-full  rounded-[20px]">
-                        <h3 className="text-grey-800 flex items-start justify-end header-large w-full max-w-[480px] pt-8 px-5">
+                <div className="flex h-full gap-4 flex-col md:flex-row">
+                    <div className="flex-1 bg-grey flex flex-col p-5 justify-center w-full  rounded-[20px]">
+                        <h3 className="text-grey-800 header-large w-full">
                             Traditional Document Automation
                         </h3>
-                        <div className="flex-1 flex items-center justify-center gap-3 px-6 flex-col w-full">
-                            <hr className="text-gray-800 w-full " />
+                        <div className="flex-1 mt-8 justify-center space-y-3 w-full">
+                            <hr className="border-grey-300 w-full " />
                             <p className="heder-normal p-2 text-grey-800 flex w-full justify-between">
                                 <span>Rule-Based Systems</span>
                                 <ChevronDown
@@ -358,7 +358,7 @@ const page = () => {
                                     className="text-grey-800"
                                 />
                             </p>
-                            <hr className="text-grey-800 flex w-full " />
+                            <hr className="border-grey-300" />
                             <p className="heder-normal p-2  text-grey-800 flex w-full justify-between">
                                 <span>Limited Document Populating</span>
                                 <ChevronDown
@@ -366,7 +366,7 @@ const page = () => {
                                     className="text-grey-800"
                                 />
                             </p>
-                            <hr className="text-grey-800 flex w-full " />
+                            <hr className="border-grey-300" />
                             <hr className="!text-gray-800 " />
                             <p className="heder-normal p-2  text-grey-800 flex w-full justify-between">
                                 <span>Fixed Workflow Automation</span>
@@ -375,7 +375,7 @@ const page = () => {
                                     className="text-grey-800"
                                 />
                             </p>
-                            <hr className="text-gray w-full" />
+                            <hr className="border-grey-300" />
                             <p className="heder-normal p-2  text-grey-800 flex w-full justify-between">
                                 <span>Limited Scalability</span>
                                 <ChevronDown
@@ -383,17 +383,49 @@ const page = () => {
                                     className="text-grey-800"
                                 />
                             </p>
-                            <hr className="text-gray-800 w-full" />
+                            <hr className="border-grey-300" />
                         </div>
                     </div>
-                    <div className="flex-1  flex flex-col items-center  w-full justify-center rounded-[20px]">
-                        <Image
-                            src="/assets/images/quantflow.png"
-                            alt="Hero"
-                            width={1120}
-                            height={600}
-                            className="w-full h-auto object-cover rounded-[20px]"
-                        />
+                    <div className="flex-1 bg-[url(/assets/images/bg/background_black.png)] p-5 bg-cover bg-no-repeat flex flex-col justify-center w-full  rounded-[20px]">
+                        <h3 className="text-white header-large w-full">
+                            Quantflow AI-powered Automation
+                        </h3>
+                        <div className="flex-1 flex items-center mt-8 justify-center gap-3 flex-col w-full">
+                            <hr className="text-white w-full " />
+                            <p className="heder-normal p-2 text-white flex w-full justify-between">
+                                <span>AI-Driven Flexibility</span>
+                                <ChevronDown
+                                    size={20}
+                                    className="text-white"
+                                />
+                            </p>
+                            <hr className="text-white flex w-full " />
+                            <p className="heder-normal p-2  text-white flex w-full justify-between">
+                                <span>Advanced Document Populating</span>
+                                <ChevronDown
+                                    size={20}
+                                    className="text-white"
+                                />
+                            </p>
+                            <hr className="text-white flex w-full " />
+                            <hr className="!text-white " />
+                            <p className="heder-normal p-2  text-white flex w-full justify-between">
+                                <span>Automated Learning</span>
+                                <ChevronDown
+                                    size={20}
+                                    className="text-white"
+                                />
+                            </p>
+                            <hr className="text-gray w-full" />
+                            <p className="heder-normal p-2  text-white flex w-full justify-between">
+                                <span>Scalable and Adaptive</span>
+                                <ChevronDown
+                                    size={20}
+                                    className="text-white"
+                                />
+                            </p>
+                            <hr className="text-white w-full" />
+                        </div>
                     </div>
                 </div>
             </div>
