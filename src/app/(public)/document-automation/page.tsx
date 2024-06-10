@@ -349,7 +349,7 @@ const page = () => {
                         </h3>
                         <div className="flex-1 flex items-center justify-center gap-3 px-6 flex-col w-full">
                             <hr className="text-gray-800 w-full " />
-                            <p className="heder-normal p-4  text-grey-800 flex w-full justify-between">
+                            <p className="heder-normal p-2 text-grey-800 flex w-full justify-between">
                                 <span>Rule-Based Systems</span>
                                 <ChevronDown
                                     size={20}
@@ -357,9 +357,8 @@ const page = () => {
                                 />
                             </p>
                             <hr className="text-grey-800 flex w-full " />
-                            <hr className="text-gray-800 " />
-                            <p className="heder-normal p-4  text-grey-800 flex w-full justify-between">
-                                <span>Rule-Based Systems</span>
+                            <p className="heder-normal p-2  text-grey-800 flex w-full justify-between">
+                                <span>Limited Document Populating</span>
                                 <ChevronDown
                                     size={20}
                                     className="text-grey-800"
@@ -367,16 +366,16 @@ const page = () => {
                             </p>
                             <hr className="text-grey-800 flex w-full " />
                             <hr className="!text-gray-800 " />
-                            <p className="heder-normal p-4  text-grey-800 flex w-full justify-between">
-                                <span>Rule-Based Systems</span>
+                            <p className="heder-normal p-2  text-grey-800 flex w-full justify-between">
+                                <span>Fixed Workflow Automation</span>
                                 <ChevronDown
                                     size={20}
                                     className="text-grey-800"
                                 />
                             </p>
                             <hr className="text-gray w-full" />
-                            <p className="heder-normal p-4  text-grey-800 flex w-full justify-between">
-                                <span>Rule-Based Systems</span>
+                            <p className="heder-normal p-2  text-grey-800 flex w-full justify-between">
+                                <span>Limited Scalability</span>
                                 <ChevronDown
                                     size={20}
                                     className="text-grey-800"
@@ -387,7 +386,7 @@ const page = () => {
                     </div>
                     <div className="flex-1  flex flex-col items-center  w-full justify-center rounded-[20px]">
                         <Image
-                            src="/assets/images/video.png"
+                            src="/assets/images/quantflow.png"
                             alt="Hero"
                             width={1120}
                             height={600}
