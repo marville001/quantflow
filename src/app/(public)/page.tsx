@@ -1,6 +1,8 @@
 import { ICONS } from "@/assets/icons";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 const hero_items = [
     {
@@ -41,13 +43,15 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="my-5 md:my-20">
-                    <Image
-                        src="/assets/images/video.png"
-                        alt="Hero"
+                <div className="my-5 md:my-20 rounded-[20px] overflow-hidden">
+                    <video
+                        src="/assets/images/home/video_hero.mov"
                         width={1120}
+                        autoPlay
+                        loop
+                        muted
                         height={600}
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover aspect-video"
                     />
                 </div>
 
@@ -90,12 +94,12 @@ export default function Home() {
                                 documents and web-forms, streamlining your
                                 paperwork effortlessly.
                             </p>
-                            <Button
-                                variant={"outline"}
-                                className="mt-5 h-[48px] gap-2"
+                            <Link
+                                href={"/document-automation"}
+                                className={cn(buttonVariants({variant:"outline"}),"mt-5 h-[48px] gap-2")}
                             >
                                 Learn more {ICONS.arrowRightUp}
-                            </Button>
+                            </Link>
                         </div>
                         <div className="flex-1 self-end h-[360px]">
                             <Image

@@ -67,36 +67,40 @@ const cards = [
 const page = () => {
     return (
         <div className="w-full">
-            <div className="max-w-[1120px] mx-auto w-full p-4 pb-10 hero-bg">
-                <div className="flex justify-center flex-col items-center pt-[60px]">
-                    <p className="rounded-full my-3 p-4 text- bg-grey  text-grey-600 text-center w-max flex items-center justify-center">
-                        Document anation
-                    </p>
-                    <h1 className="text-grey-800 hero-medium w-full md:max-w-[732px] text-center ">
-                        Populate documents in seconds.
-                    </h1>
-                    <p className="text-grey-800 header-normal  w-full max-w-[] sm:max-w-[544px] text-center mt-5 ">
-                        With Quantflow’s platform you can automate the
-                        populating and processing of documents & web-forms.
-                    </p>
-                    <div className="flex items-center gap-4 mt-7">
-                        <Button>Get started</Button>
-                        <Button variant={"outline"}>Talk to Sales</Button>
+            <div className="document-automation-bg p-4 bg-opacity-0">
+                <div className="max-w-[1120px] mx-auto w-full p-4 pb-10 hero-bg">
+                    <div className="flex justify-center flex-col items-center pt-[60px]">
+                        <p className="rounded-full my-3 px-6 py-1.5 text- bg-grey  text-grey-600 text-center w-max flex items-center justify-center">
+                            Document Automation
+                        </p>
+                        <h1 className="text-grey-800 hero-medium w-full md:max-w-[732px] text-center ">
+                            Populate documents in seconds.
+                        </h1>
+                        <p className="text-grey-800 header-normal  w-full max-w-[] sm:max-w-[544px] text-center mt-5 ">
+                            With Quantflow’s platform you can automate the
+                            populating and processing of documents & web-forms.
+                        </p>
+                        <div className="flex items-center gap-4 mt-7">
+                            <Button>Get started</Button>
+                            <Button variant={"outline"}>Talk to Sales</Button>
+                        </div>
                     </div>
-                </div>
 
-                <div className="my-5 md:my-20">
-                    <Image
-                        src="/assets/images/video.png"
-                        alt="Hero"
-                        width={1120}
-                        height={600}
-                        className="w-full h-auto object-cover"
-                    />
+                    <div className="my-5 md:my-20 rounded-[20px] overflow-hidden">
+                        <video
+                            src="/assets/images/document_automation/video_hero.mov"
+                            width={1120}
+                            autoPlay
+                            loop
+                            muted
+                            height={600}
+                            className="w-full h-auto object-cover aspect-video"
+                        />
+                    </div>
                 </div>
             </div>
 
-            <div className="py-10  mx-auto">
+            <div className="py-10 px-4 mx-auto">
                 <h2 className="hero-medium text-grey-800 text-center">
                     Automation via Gen Ai
                 </h2>
@@ -106,7 +110,7 @@ const page = () => {
                 </p>
             </div>
 
-            <div className="max-w-[1120px] py-10 mx-auto ">
+            <div className="max-w-[1120px] py-10 px-4 mx-auto ">
                 <div className="flex gap-6 flex-col lg:flex-row">
                     <div className="flex-1 border-[1px] bg-grey p-4 lg:w-[640px]  rounded-[20px]">
                         <div className="flex justify-between gap-5 mt-4 flex-col gap-y-8 sm:flex-row">
@@ -276,7 +280,7 @@ const page = () => {
                 </div>
             </div>
 
-            <div className="max-w-[1120px] py-10 mx-auto  mt-4">
+            <div className="max-w-[1120px] py-10 px-4 mx-auto  mt-4">
                 <div className="flex-1 p-4 rounded-[20px]">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {hero_items.map((item, idx) => (
@@ -303,36 +307,34 @@ const page = () => {
                         Accelerating workflows across various industries.
                     </p>
 
-                    <div className=" mt-10 p-[32px]  gap-y-6 flex-col sm:flex-row pr-0 pb-0 overflow-hidden rounded-[20px] flex">
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 h-[325px]">
-                            {cards.map((item, idx) => (
-                                <div
-                                    key={idx}
-                                    className="flex flex-col gap-2 bg-white p-4 rounded-[20px]"
-                                >
-                                    <Image
-                                        src={item.image}
-                                        alt="Hero"
-                                        width={400}
-                                        height={400}
-                                        className="w-full h-[200px] rounded-[20px] object-cover flex-1"
-                                    />
-                                    <p className="text-grey-600 body-small w-full mt-1">
-                                        {item.title}
-                                    </p>
-                                    <h3 className=" flex items-center gap-2 bg-white">
-                                        <span className="text-grey-800 header-normal">
-                                            {item.description}
-                                        </span>
-                                    </h3>
-                                </div>
-                            ))}
-                        </div>
+                    <div className=" mt-10 flex-col sm:flex-row pr-0 pb-0 grid w-full md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {cards.map((item, idx) => (
+                            <div
+                                key={idx}
+                                className="flex flex-col gap-2 bg-white p-4 rounded-[20px]"
+                            >
+                                <Image
+                                    src={item.image}
+                                    alt="Hero"
+                                    width={400}
+                                    height={400}
+                                    className="w-full h-[200px] rounded-[20px] object-cover flex-1"
+                                />
+                                <p className="text-grey-600 body-small w-full mt-1">
+                                    {item.title}
+                                </p>
+                                <h3 className=" flex items-center gap-2 bg-white">
+                                    <span className="text-grey-800 header-normal">
+                                        {item.description}
+                                    </span>
+                                </h3>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
 
-            <div className=" max-w-[1120px] py-10 mx-auto">
+            <div className=" max-w-[1120px] py-10 px-4 mx-auto">
                 <div className="py-10">
                     <h2 className="hero-medium text-grey-800 text-center">
                         The future of automation
