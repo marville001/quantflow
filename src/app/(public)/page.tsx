@@ -96,18 +96,18 @@ export default function Home() {
                             </p>
                             <Link
                                 href={"/document-automation"}
-                                className={cn(buttonVariants({variant:"outline"}),"mt-5 h-[48px] gap-2")}
+                                className={cn(buttonVariants({ variant: "outline" }), "mt-5 h-[48px] gap-2")}
                             >
                                 Learn more {ICONS.arrowRightUp}
                             </Link>
                         </div>
-                        <div className="flex-1 self-end h-[360px]">
+                        <div className="md:flex-1 self-end h-[100px] md:h-[360px] w-full">
                             <Image
-                                src="/assets/images/document-automation.png"
+                                src="/assets/images/home/document_automation.png"
                                 alt="Document automation"
                                 width={600}
                                 height={400}
-                                className="w-full h-[300px] sm:h-full max-sm:object-left object-top object-cover"
+                                className="w-full lg:w-[1000px] h-[300px] sm:h-full object-left-top object-cover"
                             />
                         </div>
                     </div>
@@ -124,16 +124,17 @@ export default function Home() {
                                     actions, integrating seamlessly with your
                                     software for efficient communication.
                                 </p>
-                                <Button
-                                    variant={"outline"}
-                                    className=" h-[48px] mt-3 w-max gap-2"
+
+                                <Link
+                                    href={"/email-automation"}
+                                    className={cn(buttonVariants({ variant: "outline" }), "mt-5 h-[48px] w-max gap-2")}
                                 >
                                     Learn more {ICONS.arrowRightUp}
-                                </Button>
+                                </Link>
 
                                 <div className="mt-6">
                                     <Image
-                                        src="/assets/images/email-automation.png"
+                                        src="/assets/images/home/mail_automation.png"
                                         alt="Email automation"
                                         width={600}
                                         height={400}
@@ -143,12 +144,10 @@ export default function Home() {
                             </div>
                             <div className="bg-white col-span-2 p-[32px] pb-0 sm:h-[450px] flex-col overflow-hidden rounded-[20px] flex">
                                 <h3 className="text-grey-800 header-normal">
-                                    Email Automation
+                                    Knowledge Hub
                                 </h3>
                                 <p className="body-normal mt-4 text-grey-600 max-w-[90%]">
-                                    Automate email responses and follow-up
-                                    actions, integrating seamlessly with your
-                                    software for efficient communication.
+                                    Leverage enterprise search and an internal chatbot to quickly find and retrieve information across your files.
                                 </p>
                                 <Button
                                     variant={"outline"}
@@ -159,7 +158,7 @@ export default function Home() {
 
                                 <div className="mt-6">
                                     <Image
-                                        src="/assets/images/email-automation.png"
+                                        src="/assets/images/home/knowledge_hub.png"
                                         alt="Email automation"
                                         width={600}
                                         height={400}
