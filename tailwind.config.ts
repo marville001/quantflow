@@ -89,6 +89,7 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        menlo: ["var(--font-menlo)", "Menlo", ...fontFamily.mono],
       },
     },
   },
