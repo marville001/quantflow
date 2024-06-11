@@ -31,7 +31,7 @@ export default function Home() {
             <div className="max-w-[1120px] mx-auto w-full p-4 pb-20 hero-bg">
                 <div className="flex justify-center flex-col items-center pt-[60px]">
                     <h1 className="text-grey-800 hero-large w-full md:max-w-[732px] text-center ">
-                        Superpowers for Admin Teams
+                        Super<span className="sm:hidden">-</span>powers for Admin Teams
                     </h1>
                     <p className="text-grey-800 header-normal  w-full max-w-[] sm:max-w-[544px] text-center mt-5 ">
                         Quantflow delivers enterprise-grade AI to automate your

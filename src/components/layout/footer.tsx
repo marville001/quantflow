@@ -16,15 +16,15 @@ const Footer = ({ }: FooterProps) => {
 					Quantflow seemingly slots into your existing stack without having to change your current system.
 				</p>
 				<Image
-					src="/assets/images/integration_image.png"
+					src="/assets/images/home/integrations-background.png"
 					alt="Integration"
 					width={1120}
 					height={600}
-					className="w-full h-auto object-cover sm:-mt-[140px]"
+					className="w-full h-auto object-cover sm:-mt-[100px]"
 				/>
 
 				<div className="mt-24 pt-24 p-4">
-					<div className="bg-black w-full p-16 lg:h-[336px] rounded-[20px] flex items-center justify-center flex-col">
+					<div className="bg-[url(/assets/images/bg/background_black.png)] bg-cover bg-no-repeat w-full p-16 lg:h-[336px] rounded-[20px] flex items-center justify-center flex-col">
 						<h2 className="header-large sm:hero-medium text-white text-center">Need some inspiration?</h2>
 						<p className="body-large text-white mt-6 text-center">Think AI can benefit your business? Let&apos;s explore how Quantflow can help!</p>
 						<Button className="mt-6">Contact Us</Button>
@@ -35,7 +35,7 @@ const Footer = ({ }: FooterProps) => {
 							<div className="flex-1">
 								<Image src="/assets/images/quantflow-logo-black.png" alt="Quantflow" width={120} height={40} />
 
-								<p className="body-normal text-grey-600 mb-4">Your Gateway to enterprise-grade AI.</p>
+								<p className="body-normal text-grey-600 my-4">Your Gateway to enterprise-grade AI.</p>
 							</div>
 
 							<Button variant={"outline"} className="mt-auto w-max">Get Started</Button>
