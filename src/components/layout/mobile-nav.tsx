@@ -37,8 +37,8 @@ const MobileNav = ({ open, closeHeader }: MobileNavProps) => {
 			</Accordion>
 
 			<div className="items-center justify-center mt-6 gap-[8px] flex">
-				<Button variant={"outline"}>Contact us</Button>
-				<Button>Get started</Button>
+				<Button size={"sm"} variant={"outline"}>Contact us</Button>
+				<Button size={"sm"}>Get started</Button>
 			</div>
 		</div>
 	);

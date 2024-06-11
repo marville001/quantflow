@@ -74,8 +74,8 @@ const Header = ({ }: HeaderProps) => {
 					</nav>
 
 					<div className="hidden items-center gap-[8px] md:flex">
-						<Button variant={"outline"}>Contact us</Button>
-						<Button>Get started</Button>
+						<Button size={"sm"} variant={"outline"}>Contact us</Button>
+						<Button size={"sm"}>Get started</Button>
 					</div>
 					<span className="menu md:hidden cursor-pointer p-2" onClick={() => setIsHeaderOpen(!isHeaderOpen)}>
 						{
