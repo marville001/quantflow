@@ -100,7 +100,7 @@
   }
 
   .body-small {
-    @apply text-[14px] leading-[20px] font-[400] tracking-[0.00em];
+    @apply text-[14px] leading-[20px] font-[400] tracking-[0.00em] font-menlo;
   }
 
   .hero-bg {

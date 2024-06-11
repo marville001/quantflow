@@ -24,7 +24,7 @@ const Footer = ({ }: FooterProps) => {
 				/>
 
 				<div className="mt-24 pt-24 p-4">
-					<div className="bg-black w-full p-16 lg:h-[336px] rounded-[20px] flex items-center justify-center flex-col">
+					<div className="bg-[url(/assets/images/bg/background_black.png)] bg-cover bg-no-repeat w-full p-16 lg:h-[336px] rounded-[20px] flex items-center justify-center flex-col">
 						<h2 className="header-large sm:hero-medium text-white text-center">Need some inspiration?</h2>
 						<p className="body-large text-white mt-6 text-center">Think AI can benefit your business? Let&apos;s explore how Quantflow can help!</p>
 						<Button className="mt-6">Contact Us</Button>
