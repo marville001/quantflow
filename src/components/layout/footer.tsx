@@ -16,11 +16,11 @@ const Footer = ({ }: FooterProps) => {
 					Quantflow seemingly slots into your existing stack without having to change your current system.
 				</p>
 				<Image
-					src="/assets/images/integration_image.png"
+					src="/assets/images/home/integrations-background.png"
 					alt="Integration"
 					width={1120}
 					height={600}
-					className="w-full h-auto object-cover sm:-mt-[140px]"
+					className="w-full h-auto object-cover sm:-mt-[100px]"
 				/>
 
 				<div className="mt-24 pt-24 p-4">
