@@ -15,9 +15,9 @@ const Header = ({ }: HeaderProps) => {
 
 
 	return (
-		<div className="h-[104px] w-full flex items-center px-4">
+		<div className="pt-4 w-full flex fixed bg-white left-0 right-0 top-0 items-center px-4">
 			<div className="max-w-[1280px] flex-1 mx-auto border-grey-300 border-[1px] 
-			rounded-[20px] flex justify-between gap-5 items-center p-[16px]">
+			rounded-[20px] flex justify-between gap-5 items-center p-[16px] bordered-header">
 				<Link href={"/"} className="logo">
 					<Image src="/assets/images/quantflow-logo-black.png" alt="Quantflow" width={120} height={40} />
 				</Link>
