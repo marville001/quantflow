@@ -31,7 +31,7 @@ export default function Home() {
             <div className="max-w-[1120px] mx-auto w-full p-4 pb-20 hero-bg">
                 <div className="flex justify-center flex-col items-center pt-[60px]">
                     <h1 className="text-grey-800 hero-large w-full md:max-w-[732px] text-center ">
-                        Super power for Admin Teams
+                        Superpowers for Admin Teams
                     </h1>
                     <p className="text-grey-800 header-normal  w-full max-w-[] sm:max-w-[544px] text-center mt-5 ">
                         Quantflow delivers enterprise-grade AI to automate your
@@ -43,7 +43,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="my-5 md:my-20 rounded-[20px] overflow-hidden">
+                <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[24px] overflow-hidden">
                     <video
                         src="/assets/images/home/video_hero.mov"
                         width={1120}
@@ -51,7 +51,7 @@ export default function Home() {
                         loop
                         muted
                         height={600}
-                        className="w-full h-auto object-cover aspect-video"
+                        className="w-full h-auto bg-red-400 video-shadow rounded-[20px]"
                     />
                 </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
                             key={item.index}
                             className="flex items-start flex-1 flex-col  gap-4"
                         >
-                            <span className="text-grey-500 body-small">
+                            <span className="text-grey-500 font-menlo body-small">
                                 {item.index}
                             </span>
                             <h3 className="text-grey-800 header-large">
@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="p-4 bg-quantflow-500">
+            <div className="p-4 bg-quantflow-500 bg-[url(/assets/images/bg/background_purple.png)] bg-cover bg-no-repeat">
                 <div className="max-w-[1120px] mx-auto py-16 lg:py-24">
                     <h2 className="hero-medium text-white">Simplify with Ai</h2>
                     <p className="body-large text-white max-w-[544px] mt-5">

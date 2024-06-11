@@ -120,4 +120,9 @@
   .bordered-header{
     box-shadow: 0px 1px 2px  #1B242C1F;
   }
+
+  .video-shadow{
+    box-shadow: inset 0px 3px 8px #1B242C1F;
+    border: 1px solid #CFD6DD;
+  }
 }
