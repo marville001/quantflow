@@ -35,7 +35,7 @@ const Footer = ({ }: FooterProps) => {
 							<div className="flex-1">
 								<Image src="/assets/images/quantflow-logo-black.png" alt="Quantflow" width={120} height={40} />
 
-								<p className="body-normal text-grey-600 mb-4">Your Gateway to enterprise-grade AI.</p>
+								<p className="body-normal text-grey-600 my-4">Your Gateway to enterprise-grade AI.</p>
 							</div>
 
 							<Button variant={"outline"} className="mt-auto w-max">Get Started</Button>
