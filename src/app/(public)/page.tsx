@@ -170,7 +170,7 @@ export default function Home() {
 
                         <div className="bg-white col-span-1 w-full max-h-[925px] p-[32px] pb-0 flex-col overflow-hidden rounded-[20px] flex">
                             <h3 className="text-grey-800 header-normal">
-                                Insight Hub
+                                Insights Hub
                             </h3>
                             <p className="body-normal mt-4 text-grey-600 max-w-[90%]">
                                 Transform unstructured data into structured

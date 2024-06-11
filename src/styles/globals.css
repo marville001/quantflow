@@ -92,11 +92,11 @@
   }
 
   .body-large {
-    @apply text-[20px] leading-[40px] font-[400] tracking-[0.00em];
+    @apply text-[20px] leading-[32px] font-[400] tracking-[0.00em];
   }
 
   .body-normal {
-    @apply text-[16px] leading-[32px] font-[400] tracking-[0.00em];
+    @apply text-[16px] leading-[24px] font-[400] tracking-[0.00em];
   }
 
   .body-small {
