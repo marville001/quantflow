@@ -86,7 +86,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className="my-5 md:my-20 rounded-[20px] overflow-hidden">
+                    <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[16px] bg-[#cfd6dd] overflow-hidden">
                         <video
                             src="/assets/images/document_automation/video_hero.mov"
                             width={1120}
@@ -94,7 +94,7 @@ const page = () => {
                             loop
                             muted
                             height={600}
-                            className="w-full h-auto object-cover aspect-video"
+                            className="w-full h-auto bg-red-400 video-shadow rounded-[20px]"
                         />
                     </div>
                 </div>

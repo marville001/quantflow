@@ -101,13 +101,13 @@ export default function Home() {
                                 Learn more {ICONS.arrowRightUp}
                             </Link>
                         </div>
-                        <div className="md:flex-1 self-end h-[100px] md:h-[360px] w-full">
+                        <div className="md:flex-1 self-end h-[100px] relative md:h-[360px] w-full">
                             <Image
                                 src="/assets/images/home/document_automation.png"
                                 alt="Document automation"
-                                width={600}
-                                height={400}
-                                className="w-full lg:w-[1000px] h-[300px] sm:h-full object-left-top object-cover"
+                                width={1089}
+                                height={734}
+                                className=" absolute top-0 left-0 -right-[400px] object-left- object-cover"
                             />
                         </div>
                     </div>
