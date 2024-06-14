@@ -3,6 +3,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 
 const hero_items = [
     {
@@ -44,15 +45,17 @@ export default function Home() {
                 </div>
 
                 <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[24px] overflow-hidden">
-                    <video
-                        src="/assets/images/home/video_hero.mov"
-                        width={1120}
-                        autoPlay
-                        loop
-                        muted
-                        height={600}
-                        className="w-full h-auto bg-red-400 video-shadow rounded-[20px]"
-                    />
+                    <Suspense fallback={null}>
+                        <video
+                            src="/assets/images/home/video_hero.mov"
+                            width={1120}
+                            autoPlay
+                            loop
+                            muted
+                            height={600}
+                            className="w-full h-auto video-shadow rounded-[20px]"
+                        />
+                    </Suspense>
                 </div>
 
                 <div className="flex justify-between gap-5 mt-4 flex-col gap-y-8 sm:flex-row">
@@ -101,13 +104,13 @@ export default function Home() {
                                 Learn more {ICONS.arrowRightUp}
                             </Link>
                         </div>
-                        <div className="md:flex-1 self-end h-[100px] md:h-[360px] w-full">
+                        <div className="md:flex-1 self-end h-[100px] relative md:h-[360px] w-full">
                             <Image
                                 src="/assets/images/home/document_automation.png"
                                 alt="Document automation"
-                                width={600}
-                                height={400}
-                                className="w-full lg:w-[1000px] h-[300px] sm:h-full object-left-top object-cover"
+                                width={1089}
+                                height={734}
+                                className=" absolute top-0 left-0 -right-[400px] object-left- object-cover"
                             />
                         </div>
                     </div>

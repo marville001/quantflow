@@ -2,6 +2,7 @@ import { ICONS } from "@/assets/icons";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { Suspense } from "react";
 
 const hero_items = [
     {
@@ -85,16 +86,18 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className="my-5 md:my-20 rounded-[20px] overflow-hidden">
-                        <video
-                            src="/assets/images/document_automation/video_hero.mov"
-                            width={1120}
-                            autoPlay
-                            loop
-                            muted
-                            height={600}
-                            className="w-full h-auto object-cover aspect-video"
-                        />
+                    <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[16px] bg-[#cfd6dd] overflow-hidden">
+                        <Suspense fallback={null}>
+                            <video
+                                src="/assets/images/document_automation/video_hero.mov"
+                                width={1120}
+                                autoPlay
+                                loop
+                                muted
+                                height={600}
+                                className="w-full h-auto video-shadow rounded-[20px]"
+                            />
+                        </Suspense>
                     </div>
                 </div>
             </div>
