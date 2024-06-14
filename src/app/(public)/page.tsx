@@ -44,7 +44,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <Suspense fallback={null}>
+                {/* <Suspense fallback={null}> */}
                     <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[24px] overflow-hidden">
                         <video
                             src="/assets/images/home/video_hero.mov"
@@ -56,7 +56,7 @@ export default function Home() {
                             className="w-full h-auto video-shadow rounded-[20px]"
                         />
                     </div>
-                </Suspense>
+                {/* </Suspense> */}
 
                 <div className="flex justify-between gap-5 mt-4 flex-col gap-y-8 sm:flex-row">
                     {hero_items.map((item) => (

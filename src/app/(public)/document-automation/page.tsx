@@ -87,7 +87,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    <Suspense fallback={null}>
+                    {/* <Suspense fallback={null}> */}
                         <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[16px] bg-[#cfd6dd] overflow-hidden">
                             <video
                                 src="/assets/images/document_automation/video_hero.mov"
@@ -99,7 +99,7 @@ const page = () => {
                                 className="w-full h-auto video-shadow rounded-[20px]"
                             />
                         </div>
-                    </Suspense>
+                    {/* </Suspense> */}
                 </div>
             </div>
 
