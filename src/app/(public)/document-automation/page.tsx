@@ -87,8 +87,8 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[16px] bg-[#cfd6dd] overflow-hidden">
-                        <Suspense fallback={null}>
+                    <Suspense fallback={null}>
+                        <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[16px] bg-[#cfd6dd] overflow-hidden">
                             <video
                                 src="/assets/images/document_automation/video_hero.mov"
                                 width={1120}
@@ -98,8 +98,8 @@ const page = () => {
                                 height={600}
                                 className="w-full h-auto video-shadow rounded-[20px]"
                             />
-                        </Suspense>
-                    </div>
+                        </div>
+                    </Suspense>
                 </div>
             </div>
 
