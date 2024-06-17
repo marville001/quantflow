@@ -87,7 +87,7 @@ const page = () => {
                     </div>
 
                     {/* <Suspense fallback={null}> */}
-                        <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[16px] bg-[#cfd6dd] overflow-hidden">
+                        <div className="my-5 md:my-20 rounded-[8px] sm:rounded-[20px] video-shadow sm:p-[16px] bg-[#cfd6dd] overflow-hidden">
                             <video
                                 src="/assets/images/document_automation/video_hero.mov"
                                 width={1120}
@@ -95,7 +95,7 @@ const page = () => {
                                 loop
                                 muted
                                 height={600}
-                                className="w-full h-auto video-shadow rounded-[20px]"
+                                className="w-full h-auto video-shadow rounded-[8px] sm:rounded-[20px]"
                             />
                         </div>
                     {/* </Suspense> */}

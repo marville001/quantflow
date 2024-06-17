@@ -9,8 +9,8 @@ interface FooterProps { }
 
 const Footer = ({ }: FooterProps) => {
 	return (
-		<div className="w-full">
-			<div className="max-w-[1120px] py-16 md:py-24 mx-auto">
+		<div className="w-full mt-[128px]">
+			<div className="max-w-[1120px] pb-24 md:pb-[128px] mx-auto">
 				<h2 className="hero-medium text-grey-800 text-center">Connect to Anything</h2>
 				<p className="max-w-[544px] mx-auto text-center p-4 mt-3 body-large">
 					Quantflow seemingly slots into your existing stack without having to change your current system.
@@ -23,15 +23,15 @@ const Footer = ({ }: FooterProps) => {
 					className="w-full h-auto object-cover sm:-mt-[100px]"
 				/>
 
-				<div className="mt-24 pt-24 p-4">
+				<div className="mt-[128px] pt-24 p-4">
 					<div className="bg-[url(/assets/images/bg/background_black.png)] bg-cover bg-no-repeat w-full p-16 lg:h-[336px] rounded-[20px] flex items-center justify-center flex-col">
 						<h2 className="header-large sm:hero-medium text-white text-center">Need some inspiration?</h2>
 						<p className="body-large text-white mt-6 text-center">Think AI can benefit your business? Let&apos;s explore how Quantflow can help!</p>
 						<Button className="mt-6">Contact Us</Button>
 					</div>
 
-					<div className="mt-6 flex gap-6 flex-col lg:flex-row">
-						<div className="flex-1 lg:flex-none lg:w-[300px] border-[1px] flex flex-col sm:flex-row lg:flex-col border-grey-300 p-4 rounded-[20px]">
+					<div className="mt-10 flex gap-6 flex-col lg:flex-row">
+						<div className="flex-1 lg:flex-none lg:w-[300px] border-[1px] flex flex-col sm:flex-row lg:flex-col border-grey-300 p-[32px] rounded-[20px]">
 							<div className="flex-1">
 								<Image src="/assets/images/quantflow-logo-black.png" alt="Quantflow" width={120} height={40} />
 
@@ -41,7 +41,7 @@ const Footer = ({ }: FooterProps) => {
 							<Button variant={"outline"} className="mt-auto w-max">Get Started</Button>
 						</div>
 
-						<div className="flex-1 border-[1px] border-grey-300 p-4 rounded-[20px]">
+						<div className="flex-1 border-[1px] border-grey-300 p-[32px] rounded-[20px]">
 							<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
 								<div className="w-full">
 									<h4 className="body-small text-grey-800">Company</h4>
