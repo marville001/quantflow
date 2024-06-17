@@ -29,7 +29,7 @@ const hero_items = [
 export default function Home() {
     return (
         <div className="w-full">
-            <div className="max-w-[1120px] mx-auto w-full p-4 pb-20 hero-bg">
+            <div className="max-w-[1120px] mx-auto w-full p-4 hero-bg">
                 <div className="flex justify-center flex-col items-center pt-[60px]">
                     <h1 className="text-grey-800 hero-large w-full md:max-w-[732px] text-center ">
                         Super<span className="sm:hidden">-</span>powers for Admin Teams
@@ -45,7 +45,7 @@ export default function Home() {
                 </div>
 
                 {/* <Suspense fallback={null}> */}
-                    <div className="my-5 md:my-20 rounded-[20px] video-shadow p-[24px] overflow-hidden">
+                    <div className="my-5 md:my-20 rounded-[8px] sm:rounded-[20px] video-shadow sm:p-[24px] overflow-hidden">
                         <video
                             src="/assets/images/home/video_hero.mov"
                             width={1120}
@@ -53,7 +53,7 @@ export default function Home() {
                             loop
                             muted
                             height={600}
-                            className="w-full h-auto video-shadow rounded-[20px]"
+                            className="w-full h-auto video-shadow rounded-[8px] sm:rounded-[20px]"
                         />
                     </div>
                 {/* </Suspense> */}
@@ -78,7 +78,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="p-4 bg-quantflow-500 bg-[url(/assets/images/bg/background_purple.png)] bg-cover bg-no-repeat">
+            <div className="p-4 mt-[128px] bg-quantflow-500 bg-[url(/assets/images/bg/background_purple.png)] bg-cover bg-no-repeat">
                 <div className="max-w-[1120px] mx-auto py-16 lg:py-24">
                     <h2 className="hero-medium text-white">Simplify with Ai</h2>
                     <p className="body-large text-white max-w-[544px] mt-5">
