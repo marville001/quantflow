@@ -46,17 +46,17 @@ export default function Home() {
                     </div>
 
                     {/* <Suspense fallback={null}> */}
-                        <div className="my-5 md:my-20 rounded-[8px] sm:rounded-[20px] bg-white video-shadow sm:p-[24px] overflow-hidden">
-                            <video
-                                src="/assets/videos/video_hero.mp4"
-                                width={1120}
-                                autoPlay
-                                loop
-                                muted
-                                height={600}
-                                className="w-full h-auto video-shadow rounded-[8px] sm:rounded-[20px]"
-                            />
-                        </div>
+                    <div className="my-5 md:my-20 rounded-[8px] sm:rounded-[20px] bg-white video-shadow sm:p-[24px] overflow-hidden">
+                        <video
+                            src="/assets/videos/video_hero.mp4"
+                            width={1120}
+                            autoPlay
+                            loop
+                            muted
+                            height={600}
+                            className="w-full h-auto video-shadow rounded-[8px] sm:rounded-[20px]"
+                        />
+                    </div>
                     {/* </Suspense> */}
 
                     <div className="flex justify-between gap-5 mt-4 flex-col gap-y-8 sm:flex-row">
@@ -112,6 +112,8 @@ export default function Home() {
                                 alt="Document automation"
                                 width={1089}
                                 height={734}
+                                priority={true}
+                                quality={100}
                                 className=" absolute top-0 left-0 -right-[400px] object-left- object-cover"
                             />
                         </div>
@@ -143,6 +145,8 @@ export default function Home() {
                                         alt="Email automation"
                                         width={600}
                                         height={400}
+                                        priority={true}
+                                        quality={100}
                                         className="w-full h-auto"
                                     />
                                 </div>
@@ -167,6 +171,8 @@ export default function Home() {
                                         alt="Email automation"
                                         width={600}
                                         height={400}
+                                        priority={true}
+                                        quality={100}
                                         className="w-full h-auto"
                                     />
                                 </div>
@@ -194,6 +200,8 @@ export default function Home() {
                                     src="/assets/images/insight-hub.png"
                                     alt="Insight Hub"
                                     width={600}
+                                    priority={true}
+                                    quality={100}
                                     height={400}
                                     className="w-full h-full object-top object-cover"
                                 />
