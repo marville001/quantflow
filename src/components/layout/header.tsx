@@ -22,8 +22,8 @@ const Header = ({ }: HeaderProps) => {
 	const [openMenuPlatform, setOpenMenuPlatform] = useState(false);
 
 	return (
-		<div className="pt-4 w-full flex fixed z-[49] bg-white left-0 right-0 top-0 items-center px-4">
-			<div className="max-w-[1280px] flex-1 mx-auto border-grey-300 border-[1px] 
+		<div className="pt-4 w-full flex fixed z-[49]  left-0 right-0 top-0 items-center px-4">
+			<div className="max-w-[1280px] bg-white flex-1 mx-auto border-grey-300 border-[1px] 
 			rounded-[20px] bordered-header flex flex-col">
 				<div className="flex justify-between flex-1 w-full gap-5 p-[16px] items-center">
 					<Link href={"/"} className="logo">
