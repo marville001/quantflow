@@ -203,7 +203,7 @@ export default function Home() {
                                     priority={true}
                                     quality={100}
                                     height={400}
-                                    className="w-full h-full object-top object-cover"
+                                    className="w-full h-full object-top object-none"
                                 />
                             </div>
                         </div>
