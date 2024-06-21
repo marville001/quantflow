@@ -35,7 +35,7 @@ export default function Home() {
                         <h1 className="text-grey-800 hero-medium sm:hero-large w-full md:max-w-[732px] text-center ">
                             Super<span className="sm:hidden">-</span>powers for Admin Teams
                         </h1>
-                        <p className="text-grey-800 header-normal  w-full max-w-[] sm:max-w-[544px] text-center mt-5 ">
+                        <p className="text-grey-800 header-normal  w-full sm:max-w-[544px] text-center mt-6 ">
                             Quantflow delivers enterprise-grade AI to automate your
                             most tedious tasks.
                         </p>
