@@ -90,7 +90,7 @@ const page = () => {
                     {/* <Suspense fallback={null}> */}
                         <div className="my-5 md:my-20  rounded-[8px] sm:rounded-[20px] video-shadow sm:p-[16px] bg-[#cfd6dd] overflow-hidden">
                             <video
-                                src="/assets/images/document_automation/video_hero.mov"
+                                src="/assets/videos/video_hero.mp4"
                                 width={1120}
                                 autoPlay
                                 loop

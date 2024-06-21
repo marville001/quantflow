@@ -29,25 +29,26 @@ const hero_items = [
 export default function Home() {
     return (
         <div className="w-full">
-            <div className="max-w-[1120px] mx-auto w-full p-4 hero-bg">
-                <div className="flex justify-center flex-col items-center pt-[60px]">
-                    <h1 className="text-grey-800 hero-medium sm:hero-large w-full md:max-w-[732px] text-center ">
-                        Super<span className="sm:hidden">-</span>powers for Admin Teams
-                    </h1>
-                    <p className="text-grey-800 header-normal  w-full max-w-[] sm:max-w-[544px] text-center mt-5 ">
-                        Quantflow delivers enterprise-grade AI to automate your
-                        most tedious tasks.
-                    </p>
-                    <div className="flex items-center gap-4 mt-7">
-                        <Button>Get started</Button>
-                        <Button variant={"outline"}>Talk to Sales</Button>
+            <div className="bg-[url(/assets/images/bg/hero_bg.png)] lg:min-h-[1420px] bg-center bg-cover bg-no-repeat">
+                <div className="max-w-[1120px] mx-auto w-full p-4 hero-bg">
+                    <div className="flex justify-center flex-col items-center pt-[60px]">
+                        <h1 className="text-grey-800 hero-medium sm:hero-large w-full md:max-w-[732px] text-center ">
+                            Super<span className="sm:hidden">-</span>powers for Admin Teams
+                        </h1>
+                        <p className="text-grey-800 header-normal  w-full max-w-[] sm:max-w-[544px] text-center mt-5 ">
+                            Quantflow delivers enterprise-grade AI to automate your
+                            most tedious tasks.
+                        </p>
+                        <div className="flex items-center gap-4 mt-7">
+                            <Button>Get started</Button>
+                            <Button variant={"outline"}>Talk to Sales</Button>
+                        </div>
                     </div>
-                </div>
 
-                {/* <Suspense fallback={null}> */}
-                    <div className="my-5 md:my-20 rounded-[8px] sm:rounded-[20px] video-shadow sm:p-[24px] overflow-hidden">
+                    {/* <Suspense fallback={null}> */}
+                    <div className="my-5 md:my-20 rounded-[8px] sm:rounded-[20px] bg-white video-shadow sm:p-[24px] overflow-hidden">
                         <video
-                            src="/assets/images/home/video_hero.mov"
+                            src="/assets/videos/video_hero.mp4"
                             width={1120}
                             autoPlay
                             loop
@@ -56,25 +57,26 @@ export default function Home() {
                             className="w-full h-auto video-shadow rounded-[8px] sm:rounded-[20px]"
                         />
                     </div>
-                {/* </Suspense> */}
+                    {/* </Suspense> */}
 
-                <div className="flex justify-between gap-5 mt-4 flex-col gap-y-8 sm:flex-row">
-                    {hero_items.map((item) => (
-                        <div
-                            key={item.index}
-                            className="flex items-start flex-1 flex-col  gap-4"
-                        >
-                            <span className="text-grey-500 font-menlo body-small">
-                                {item.index}
-                            </span>
-                            <h3 className="text-grey-800 header-large">
-                                {item.title}
-                            </h3>
-                            <p className="text-grey-600 body-normal w-full mt-1">
-                                {item.description}
-                            </p>
-                        </div>
-                    ))}
+                    <div className="flex justify-between gap-5 mt-4 flex-col gap-y-8 sm:flex-row">
+                        {hero_items.map((item) => (
+                            <div
+                                key={item.index}
+                                className="flex items-start flex-1 flex-col  gap-4"
+                            >
+                                <span className="text-grey-500 font-menlo body-small">
+                                    {item.index}
+                                </span>
+                                <h3 className="text-grey-800 header-large">
+                                    {item.title}
+                                </h3>
+                                <p className="text-grey-600 body-normal w-full mt-1">
+                                    {item.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 
@@ -110,6 +112,8 @@ export default function Home() {
                                 alt="Document automation"
                                 width={1089}
                                 height={734}
+                                priority={true}
+                                quality={100}
                                 className=" absolute top-0 left-0 -right-[400px] object-left- object-cover"
                             />
                         </div>
@@ -141,6 +145,8 @@ export default function Home() {
                                         alt="Email automation"
                                         width={600}
                                         height={400}
+                                        priority={true}
+                                        quality={100}
                                         className="w-full h-auto"
                                     />
                                 </div>
@@ -165,6 +171,8 @@ export default function Home() {
                                         alt="Email automation"
                                         width={600}
                                         height={400}
+                                        priority={true}
+                                        quality={100}
                                         className="w-full h-auto"
                                     />
                                 </div>
@@ -192,6 +200,8 @@ export default function Home() {
                                     src="/assets/images/insight-hub.png"
                                     alt="Insight Hub"
                                     width={600}
+                                    priority={true}
+                                    quality={100}
                                     height={400}
                                     className="w-full h-full object-top object-cover"
                                 />
